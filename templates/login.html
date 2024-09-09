@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Авторизация
+{% endblock%}
+
+{% block body%}
+
+
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+           <div class="col-xl-5 col-lg-6 col-md-8 col-12">
+              <div class="card shadow-sm mb-6">
+                 <div class="card-body">
+                    <main class="form-signin w-100 m-auto">
+                        <form method="post">
+                          <h1 class="h3 mb-3 fw-normal">Please Sign in</h1>
+                      
+                          <div class="form-floating">
+                            <input type="text" name="email" class="form-control" id="floatingInput" >
+                            <label for="floatingInput">Email address</label>
+                          </div>
+                          <div class="form-floating">
+                            <input type="password" name="password" class="form-control" id="floatingPassword" >
+                            <label for="floatingPassword">Password</label>
+                          </div>
+                          
+                      
+                          <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                        </form>
+                      </main>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </div>
+</section>
+
+{% endblock%}
